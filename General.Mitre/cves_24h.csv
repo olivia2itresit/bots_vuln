@@ -1,0 +1,27 @@
+Technologie,CVE ID,Date de publication,Description
+Apache,CVE-2024-41177,2025-08-03T10:15:27.240,"Incomplete Blacklist to Cross-Site Scripting vulnerability in Apache Zeppelin.
+
+This issue affects Apache Zeppelin: before 0.12.0.
+
+Users are recommended to upgrade to version 0.12.0, which fixes the issue."
+Apache,CVE-2024-52279,2025-08-03T10:15:27.517,"Improper Input Validation vulnerability in Apache Zeppelin. The fix for JDBC URL validation in CVE-2024-31864 did not account for URL encoded input.
+
+This issue affects Apache Zeppelin: from 0.11.1 before 0.12.0.
+
+Users are recommended to upgrade to version 0.12.0, which fixes the issue."
+Apache,CVE-2024-51775,2025-08-03T11:15:26.000,"Missing Origin Validation in WebSockets vulnerability in Apache Zeppelin.
+
+The attacker could access the Zeppelin server from another origin without any restriction, and get internal information about paragraphs. 
+This issue affects Apache Zeppelin: from 0.11.1 before 0.12.0.
+
+Users are recommended to upgrade to version 0.12.0, which fixes the issue."
+Apache,CVE-2025-54571,2025-08-06T00:15:30.687,"ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. In versions 2.9.11
+and below, an attacker can override the HTTP response’s Content-Type, which could lead to several issues depending on the HTTP scenario. For example, we have demonstrated the potential for XSS and arbitrary script source code disclosure in the latest version of mod_security2. This issue is fixed in version 2.9.12."
+Apache,CVE-2025-48913,2025-08-08T10:15:25.663,"If untrusted users are allowed to configure JMS for Apache CXF, previously they could use RMI or LDAP URLs, potentially leading to code execution capabilities.  This interface is now restricted to reject those protocols, removing this possibility.
+
+Users are recommended to upgrade to versions 3.6.8, 4.0.9 or 4.1.3, which fix this issue."
+Apache,CVE-2025-53606,2025-08-08T10:15:26.547,"Deserialization of Untrusted Data vulnerability in Apache Seata (incubating).
+
+This issue affects Apache Seata (incubating): 2.4.0.
+
+Users are recommended to upgrade to version 2.5.0, which fixes the issue."
