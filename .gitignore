@@ -1,2 +1,4 @@
 venv_torch/
 .gitignore
+generic/.env
+generic/cves.db

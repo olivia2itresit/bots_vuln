@@ -7,7 +7,6 @@ def fetch_cves():
     user = os.getenv("OPENCVE_USER")
     password = os.getenv("OPENCVE_PASS")
     params = {
-        "vendor": "microsoft"
     }
     response = requests.get("https://app.opencve.io/api/cve", auth=(user, password), params=params)
     print(f"Status Code: {response.status_code}")
