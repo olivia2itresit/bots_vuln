@@ -41,3 +41,67 @@ Full details → https://t.co/pN3bDJZTVs"
 ⚙️ Attackers could exploit flaws in KernelSU to take complete control of rooted Android devices. With the right malicious app, they can access everything — no trace left.
 
 How the exploit works &amp; what to do"
+1960394571608633818,2025-08-26 17:31:02+00:00,"🚨 Citrix just patched 3 critical NetScaler flaws—one (CVE-2025-7775) is already under active attack.
+
+Hackers can hijack systems (RCE) or crash them. No workarounds, only updates.
+
+Admins need to move fast.
+
+Full details here → https://t.co/q6UGg8BAMJ"
+1960348303372992640,2025-08-26 14:27:11+00:00,"⚠️ Alerte CERT-FR ⚠️
+
+La vulnérabilité CVE-2025-7775 est activement exploitée et permet d'effectuer une exécution de code arbitraire à distance sur toutes les versions de Citrix NetScaler ADC et NetScaler Gateway. Un correctif est disponible.
+
+https://t.co/t1Jbz9kFnS"
+1960219632901537815,2025-08-26 05:55:54+00:00,"CISA just flagged 3 new actively exploited flaws—two in Citrix Session Recording, one in Git.
+
+The Git bug (CVE-2025-48384) can let attackers run arbitrary code just by cloning a repo. Proof-of-concept exploit is already out.
+
+Here’s what you need to know ↓ https://t.co/GC6Gj0ew55"
+1960038252263494057,2025-08-25 17:55:09+00:00,"🚨 Critical flaw in Docker Desktop (CVE-2025-9074, 9.3/10) lets a malicious container escape and hijack the host.
+
+On Windows, attackers can mount the full C:\ drive, read sensitive files, even escalate to admin. macOS safer—but not safe.
+
+Patch now (v4.44.3). Details → https://t.co/6tQ7FURbFp"
+1959158640784429329,2025-08-23 07:39:54+00:00,"⚠️ Cyberattacks are shifting gears.
+
+➟ One crew hijacks GeoServer (CVE-2024-36401) to quietly sell your internet bandwidth.
+
+➟ Another builds PolarEdge, a 40k-device botnet hidden in firewalls &amp; routers.
+
+➟ And “Gayfemboy” — a Mirai offshoot — spreads across industries to fuel https://t.co/kXeqcUQROl"
+1958569641908863205,2025-08-21 16:39:25+00:00,"🚨 Four new Commvault flaws just dropped — and they can be chained for pre-auth remote code execution.
+
+Attackers could seize control before you even log in.
+
+Worst part? One chain works if the default admin password was never changed.
+
+Patch now. Details here → https://t.co/oBSQWJqGoC"
+1958416605559370155,2025-08-21 06:31:19+00:00,"🚨Apple Users, UPDATE NOW‼️
+
+Apple Patches CVE-2025-43300 Zero-Day in iOS, iPadOS, and macOS Exploited in Targeted Attacks
+
+Source: https://t.co/v0vvfBGXWQ"
+1958390659020362049,2025-08-21 04:48:12+00:00,"🚨 Apple just patched a zero-day already under attack.
+
+Hackers were exploiting a malicious image bug (CVE-2025-43300) in iPhones, iPads &amp; Macs.
+
+Apple says it was used in extremely sophisticated targeted attacks.
+
+Update now. Details ↓  https://t.co/nPVg9eR7at"
+1960394571608633818,2025-08-26 17:31:02+00:00,"🚨 Citrix just patched 3 critical NetScaler flaws—one (CVE-2025-7775) is already under active attack.  Hackers can hijack systems (RCE) or crash them. No workarounds, only updates.  Admins need to move fast.  Full details here → https://t.co/q6UGg8BAMJ"
+1960348303372992640,2025-08-26 14:27:11+00:00,⚠️ Alerte CERT-FR ⚠️  La vulnérabilité CVE-2025-7775 est activement exploitée et permet d'effectuer une exécution de code arbitraire à distance sur toutes les versions de Citrix NetScaler ADC et NetScaler Gateway. Un correctif est disponible.  https://t.co/t1Jbz9kFnS
+1960219632901537815,2025-08-26 05:55:54+00:00,"CISA just flagged 3 new actively exploited flaws—two in Citrix Session Recording, one in Git.  The Git bug (CVE-2025-48384) can let attackers run arbitrary code just by cloning a repo. Proof-of-concept exploit is already out.  Here’s what you need to know ↓ https://t.co/GC6Gj0ew55"
+1960038252263494057,2025-08-25 17:55:09+00:00,"🚨 Critical flaw in Docker Desktop (CVE-2025-9074, 9.3/10) lets a malicious container escape and hijack the host.  On Windows, attackers can mount the full C:\ drive, read sensitive files, even escalate to admin. macOS safer—but not safe.  Patch now (v4.44.3). Details → https://t.co/6tQ7FURbFp"
+1959158640784429329,2025-08-23 07:39:54+00:00,"⚠️ Cyberattacks are shifting gears.  ➟ One crew hijacks GeoServer (CVE-2024-36401) to quietly sell your internet bandwidth.  ➟ Another builds PolarEdge, a 40k-device botnet hidden in firewalls &amp; routers.  ➟ And “Gayfemboy” — a Mirai offshoot — spreads across industries to fuel https://t.co/kXeqcUQROl"
+1958569641908863205,2025-08-21 16:39:25+00:00,🚨 Four new Commvault flaws just dropped — and they can be chained for pre-auth remote code execution.  Attackers could seize control before you even log in.  Worst part? One chain works if the default admin password was never changed.  Patch now. Details here → https://t.co/oBSQWJqGoC
+1958416605559370155,2025-08-21 06:31:19+00:00,"🚨Apple Users, UPDATE NOW‼️  Apple Patches CVE-2025-43300 Zero-Day in iOS, iPadOS, and macOS Exploited in Targeted Attacks  Source: https://t.co/v0vvfBGXWQ"
+1958390659020362049,2025-08-21 04:48:12+00:00,"🚨 Apple just patched a zero-day already under attack.  Hackers were exploiting a malicious image bug (CVE-2025-43300) in iPhones, iPads &amp; Macs.  Apple says it was used in extremely sophisticated targeted attacks.  Update now. Details ↓  https://t.co/nPVg9eR7at"
+1960394571608633818,2025-08-26 17:31:02+00:00,"🚨 Citrix just patched 3 critical NetScaler flaws—one (CVE-2025-7775) is already under active attack.  Hackers can hijack systems (RCE) or crash them. No workarounds, only updates.  Admins need to move fast.  Full details here → https://t.co/q6UGg8BAMJ"
+1960348303372992640,2025-08-26 14:27:11+00:00,⚠️ Alerte CERT-FR ⚠️  La vulnérabilité CVE-2025-7775 est activement exploitée et permet d'effectuer une exécution de code arbitraire à distance sur toutes les versions de Citrix NetScaler ADC et NetScaler Gateway. Un correctif est disponible.  https://t.co/t1Jbz9kFnS
+1960219632901537815,2025-08-26 05:55:54+00:00,"CISA just flagged 3 new actively exploited flaws—two in Citrix Session Recording, one in Git.  The Git bug (CVE-2025-48384) can let attackers run arbitrary code just by cloning a repo. Proof-of-concept exploit is already out.  Here’s what you need to know ↓ https://t.co/GC6Gj0ew55"
+1960038252263494057,2025-08-25 17:55:09+00:00,"🚨 Critical flaw in Docker Desktop (CVE-2025-9074, 9.3/10) lets a malicious container escape and hijack the host.  On Windows, attackers can mount the full C:\ drive, read sensitive files, even escalate to admin. macOS safer—but not safe.  Patch now (v4.44.3). Details → https://t.co/6tQ7FURbFp"
+1959158640784429329,2025-08-23 07:39:54+00:00,"⚠️ Cyberattacks are shifting gears.  ➟ One crew hijacks GeoServer (CVE-2024-36401) to quietly sell your internet bandwidth.  ➟ Another builds PolarEdge, a 40k-device botnet hidden in firewalls &amp; routers.  ➟ And “Gayfemboy” — a Mirai offshoot — spreads across industries to fuel https://t.co/kXeqcUQROl"
+1958569641908863205,2025-08-21 16:39:25+00:00,🚨 Four new Commvault flaws just dropped — and they can be chained for pre-auth remote code execution.  Attackers could seize control before you even log in.  Worst part? One chain works if the default admin password was never changed.  Patch now. Details here → https://t.co/oBSQWJqGoC
+1958416605559370155,2025-08-21 06:31:19+00:00,"🚨Apple Users, UPDATE NOW‼️  Apple Patches CVE-2025-43300 Zero-Day in iOS, iPadOS, and macOS Exploited in Targeted Attacks  Source: https://t.co/v0vvfBGXWQ"
+1958390659020362049,2025-08-21 04:48:12+00:00,"🚨 Apple just patched a zero-day already under attack.  Hackers were exploiting a malicious image bug (CVE-2025-43300) in iPhones, iPads &amp; Macs.  Apple says it was used in extremely sophisticated targeted attacks.  Update now. Details ↓  https://t.co/nPVg9eR7at"
