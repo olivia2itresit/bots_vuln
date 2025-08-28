@@ -2,12 +2,14 @@ import requests, os
 from dotenv import load_dotenv
 
 
-def fetch_cves():
+def fetch_cves(keyword=None):
     load_dotenv()
     user = os.getenv("OPENCVE_USER")
     password = os.getenv("OPENCVE_PASS")
     params = {
-    }
+        "search": keyword
+    } if keyword and keyword.strip() else {}
+    
     response = requests.get("https://app.opencve.io/api/cve", auth=(user, password), params=params)
     print(f"Status Code: {response.status_code}")
     body = response.json()

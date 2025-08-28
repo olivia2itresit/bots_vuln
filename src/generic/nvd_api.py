@@ -33,7 +33,7 @@ def sanitize(value):
     return s
 
 #Adjust dates based on the the execution frequency of this script. i.e if script executed every hour, the start_date should be set to 1 hour ago from now()
-def fetch_cves(keyword=None, max_results=50, days=3):
+def fetch_cves(keyword=None, max_results=50, days=1):
     base_url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
     end_date = datetime.now()
     start_date = end_date - timedelta(days=days)  # Last 'days' days
@@ -43,7 +43,7 @@ def fetch_cves(keyword=None, max_results=50, days=3):
         "pubEndDate": end_date.strftime("%Y-%m-%dT%H:%M:%S.000Z")
     }
 
-    if keyword:
+    if keyword and keyword.strip():
         params["keywordSearch"] = keyword
     
     headers = {
@@ -53,6 +53,9 @@ def fetch_cves(keyword=None, max_results=50, days=3):
     response = requests.get(base_url, params=params, headers=headers, timeout=30)
     response.raise_for_status()
     data = response.json()
+    print('----ALL DATA---')
+    print(data)
+    print('----ALL DATA----')
     cve_list = []
     for item in data.get('vulnerabilities', []):
         print(item)
@@ -70,7 +73,7 @@ def fetch_cves(keyword=None, max_results=50, days=3):
     return cve_list
 
 
-def main(techs=False, max_results=50, days=3):
+def main(techs=False, max_results=50, days=3, tech=None):
     try:
         script_dir = os.path.dirname(os.path.abspath(__file__))
     except NameError:
@@ -94,7 +97,7 @@ def main(techs=False, max_results=50, days=3):
                     print(f"Error fetching CVEs for {tech}: {e}")
         else:
             try: 
-                cves = fetch_cves(max_results=max_results, days=days)
+                cves = fetch_cves(keyword=tech,max_results=max_results, days=days)
                 for cve in cves:
                     writer.writerow(["General", cve.get("pubDate", ""), cve.get("cve_id", ""), cve.get("full_desc", "")])
             except Exception as e:
@@ -106,7 +109,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fetch CVEs for technologies.")
     parser.add_argument("--techs", action="store_true", help="Fetch CVEs for specific pool of technologies.")
     parser.add_argument("--max-results", type=int, default=50, help="Maximum number of CVEs to fetch per technology/in total.")
-    parser.add_argument("--days", type=int, default=3, help="Number of days to look back for CVEs.")
+    parser.add_argument("--days", type=int, default=1, help="Number of days to look back for CVEs.")
+    parser.add_argument("--tech", type=str, help="Specific technology to fetch CVEs for.")
     args = parser.parse_args()
 
-    main(techs=args.techs, max_results=args.max_results, days=args.days)
+    main(techs=args.techs, max_results=args.max_results, days=args.days, tech=args.tech)

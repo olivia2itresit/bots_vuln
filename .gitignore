@@ -2,3 +2,4 @@ venv_torch/
 .gitignore
 generic/.env
 generic/cves.db
+src/generic/.env
