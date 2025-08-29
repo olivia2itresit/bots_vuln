@@ -1,8 +1,8 @@
 import sqlite3
 import csv
 
-DB_FILE = "vulns.db"
-CSV_FILE = "techs_clients.csv"
+DB_FILE = "db/vulns.db"
+CSV_FILE = "db/techs_clients.csv"
 
 # Create / connect DB
 conn = sqlite3.connect(DB_FILE)

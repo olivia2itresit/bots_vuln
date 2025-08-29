@@ -3,3 +3,4 @@ venv_torch/
 generic/.env
 generic/cves.db
 src/generic/.env
+src/feeds/generic/.env

@@ -10,10 +10,10 @@ DB = "db/vulns.db"
 
 # Query
 query = f"""
-("CVE-" OR "0day" OR "exploit" OR "exploited" OR "exploiting" OR "actively exploited" OR "PATCH NOW" OR "patch now" OR "PATCH" OR "patch" OR "Known Exploited Vulnerabilities") (from:thehackersnews OR from:cert_fr OR from:CISAgov OR from:H4ckmanac OR from:CISACyber) -is:retweet
+("CVE-" OR "0day" OR "exploit" OR "exploiting" OR "actively exploited" OR "PATCH NOW" OR "patch now" OR "PATCH" OR "patch" OR "Known Exploited Vulnerabilities") (from:thehackersnews OR from:cert_fr OR from:CISAgov OR from:H4ckmanac OR from:CISACyber) -is:retweet
 """
 
-csv_file = "tweets.csv"
+CSV_FILE = "src/generic/tweets_data/tweets.csv"
 csv_header = ["id", "date", "text"]
 
 def try_to_fetch_tweets(query):
@@ -41,7 +41,7 @@ def check_techs(tweets):
 
 
 def to_csv(tweets):
-    with open(csv_file, mode="a", newline="", encoding="utf-8") as f:
+    with open(CSV_FILE, mode="a", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         for tweet in tweets.data:
 
